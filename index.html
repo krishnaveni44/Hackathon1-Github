@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repository View</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+.main-header{background:#24292f;left:0;padding:10px 0;position:fixed;text-align:center;top:0;width:100%;z-index:9;}
+.main-header input[type=text]{background:none;border:solid 1px #ccc;border-radius:7px 0 0 7px;color:#ccc;padding:3px 10px}
+.main-header input[type=submit]{background:#ccc;border:solid 1px #ccc;border-radius:0 7px 7px 0;padding:3px 20px}
+.sec-hea{background:rgb(236,236,236);background:linear-gradient(0deg, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 100%);border-bottom:solid 1px #ccc;font-weight:bold;left:0;margin:21px 0 15px;padding:10px 0;position:fixed;top:30px;width:100%;z-index:9;}
+.sec-hea span{display:inline-block;text-align:center;width:20%}
+.di-split{margin:120px 0 0 0}
+.sec-part ul{margin:0;padding:0}
+.sec-part ul li{display:inline-block;font-size:14px;list-style:none;margin:10px 0;padding:0;text-align:center;width:19.7%;}
+.sec-part ul li:nth-child(1) img{border-radius:5px;box-shadow:3px 3px 5px #c1baba;max-width:50px}
+.sec-part ul li:nth-child(2){text-align:left;word-break:break-all;}
+.sec-part ul li:nth-child(3) span{background:#e8fff3;border-radius:5px;color:#50cd89;font-weight:bold;padding:3px 8px;}
+.sec-part ul li:nth-child(4) span{background:#f1faff;border-radius:5px;color:#009ef7;font-weight:bold;padding:3px 8px;}
+.sec-part ul li:nth-child(5) a{background:#f0416c;border-radius:5px;color:#fff;padding:5px 20px;text-decoration:none;transition:all .5s}
+.sec-part ul li:nth-child(5) a:hover{background:#c3284e;transition:all .5s;}
+.sec-part{border-bottom:dotted 1px #ccc;border-left:solid 5px #7239e9;border-radius:8px;box-shadow:0 3px 4px #e4e3e3;margin:0 0 5px;transition:all .5s;}
+.sec-part:hover{border-bottom:dotted 1px #ccc;box-shadow:0 0 4px #fff;transition:all .5s;}
+.sec-part:nth-of-type(2n+1){border-left:solid 5px #fec700}
+.sec-part:nth-of-type(3n+3){border-left:solid 5px #50cc89}
+.sec-part:nth-of-type(4n+2){border-left:solid 5px #f0416c}
+.fa-github{color:#fff;font-size:2.5em;left:30px;position:absolute;top:6px;}
+
+@media screen and (max-width:875px) {
+    .sec-part ul li{width:19.5%}  
+}
+@media screen and (max-width:655px) {
+    .sec-part ul li:nth-child(5) a{display:block;}
+    .di-split{margin:140px 0 0 0}
+}
+@media screen and (max-width:530px) {
+    .sec-part ul li:nth-child(5){width:19.1%;}
+}
+
+@media screen and (max-width:460px) {
+    .sec-hea span, .sec-part ul li:nth-child(5){width:100%}
+    .sec-part ul li{position:relative;width:100%}
+    .sec-part ul li:nth-child(2){text-align:center;}
+    .sec-part ul li:nth-child(5) a{bottom:-16px;left:-1px;position:absolute;}
+    .di-split{margin:200px 0 0 0;}
+}
+</style>
+</head>
+
+<body>
+   
+   <script src="script.js"></script>
+</body>
+</html>
